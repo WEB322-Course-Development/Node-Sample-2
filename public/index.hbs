@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WEB322-Sample 2</title>
+	
+	<!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="lib/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+	
+	<!-- Main CSS file -->
+	<link href="css/main.css" rel="stylesheet">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+			<a class="navbar-brand" href="#">WEB322-Sample 2</a>
+        </div>
+      </div>
+    </nav>
+	
+	<!-- do everything in a single column -->
+	<div class="container">
+      <div class="row">
+        <div class="col-md-12 main-column">
+			<h2>Server-Side Calculator</h2>
+            <div class="well main-well">
+				<form method="post" class="form-container" action="/">
+				<div class="form-group">
+						<button id="calc-clear" class="btn btn-info pull-right calc-btn">C</button>
+						<input id="calc-display" name="calcDisplay" type="text" class="form-control text-right bg-white" readonly="readonly" value="{{result}}">
+						
+					</div>
+					<div class="form-group calc-btn-row">
+						<button class="btn btn-default pull-right calc-btn">/</button>
+						<button class="btn btn-default pull-right calc-btn">9</button>
+						<button  class="btn btn-default pull-right calc-btn">8</button>
+						<button class="btn btn-default pull-right calc-btn">7</button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="form-group calc-btn-row">
+						<button class="btn btn-default pull-right calc-btn">*</button>
+						<button class="btn btn-default pull-right calc-btn">6</button>
+						<button  class="btn btn-default pull-right calc-btn">5</button>
+						<button class="btn btn-default pull-right calc-btn">4</button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="form-group calc-btn-row">
+						<button class="btn btn-default pull-right calc-btn">-</button>
+						<button class="btn btn-default pull-right calc-btn">3</button>
+						<button  class="btn btn-default pull-right calc-btn">2</button>
+						<button class="btn btn-default pull-right calc-btn">1</button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="form-group calc-btn-row">
+						<button class="btn btn-default pull-right calc-btn">+</button>
+						<button type="submit" class="btn btn-primary pull-right calc-btn">=</button>
+						<button  class="btn btn-default pull-right calc-btn">.</button>
+						<button class="btn btn-default pull-right calc-btn">0</button>
+						<div class="clearfix"></div>
+					</div>
+					
+					
+					<div class="clearfix"></div>
+				</form>
+			</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery-1.12.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<!-- Include the main javascript file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
