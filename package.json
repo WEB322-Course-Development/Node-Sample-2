@@ -2,6 +2,7 @@
   "name": "Sample_1",
   "description": "Sample app",
   "version": "0.0.1",
+  "main": "server.js",
   "private": true,
   "dependencies": {
     "body-parser": "^1.14.2",
